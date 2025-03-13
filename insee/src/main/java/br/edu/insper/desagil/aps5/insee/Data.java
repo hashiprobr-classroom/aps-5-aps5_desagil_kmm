@@ -74,15 +74,15 @@ public class Data extends Referencia{
     public int comoInteiro(){
         int dias = 0;
 
-        for(int i = 1970; i < this.ano; i++){
+        for(int i = 1970; i < ano; i++){
             dias += 365;
         }
 
-        for(int i = 1; i < this.mes; i++){
+        for(int i = 1; i < mes; i++){
             dias += limites.get(i);
         }
 
-        for(int i = 1; i < this.dia; i++){
+        for(int i = 1; i < dia; i++){
             dias += 1;
         }
 
