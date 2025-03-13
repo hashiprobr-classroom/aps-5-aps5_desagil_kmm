@@ -53,7 +53,7 @@ public class Data extends Referencia{
             mes = 1;
         }
 
-        if (mes > 12){
+        else if (mes > 12){
             mes = 12;
         }
 
@@ -61,7 +61,7 @@ public class Data extends Referencia{
             dia = 1;
         }
 
-        if (dia > limites.get(mes)){
+        else if (dia > limites.get(mes)){
             dia = limites.get(mes);
         }
 
@@ -86,6 +86,6 @@ public class Data extends Referencia{
             dias += 1;
         }
 
-        return dias-1;
+        return dias;
     }
 }

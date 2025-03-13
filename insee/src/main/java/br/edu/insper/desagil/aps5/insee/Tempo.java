@@ -23,8 +23,8 @@ public class Tempo extends Referencia{
             hora = 0;
         }
 
-        if(hora >25){
-            hora = 25;
+        if(hora > 23){
+            hora = 23;
         }
 
         if(minuto < 0){
@@ -32,7 +32,7 @@ public class Tempo extends Referencia{
         }
 
         if(minuto > 59){
-            minuto= 59;
+            minuto = 59;
         }
 
         this.hora = hora;
@@ -51,6 +51,6 @@ public class Tempo extends Referencia{
             minutos += 1;
         }
 
-        return minutos -1;
+        return minutos;
     }
 }

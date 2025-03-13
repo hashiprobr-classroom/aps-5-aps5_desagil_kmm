@@ -15,10 +15,7 @@ public class Agenda {
     }
 
     public void adiciona(Evento evento){
-        try {
-            eventos.add(evento);
-        } catch (IllegalArgumentException e) {
-            System.err.println("Evento inválido!");
-        }
+        eventos.add(evento);
+        throw new IllegalArgumentException("Evento inválido!");
     }
 }
