@@ -1,6 +1,6 @@
 package br.edu.insper.desagil.aps5.isail;
 
-public class Comprador {
+public class Comprador{
     private String cpf;
     private String nome;
     private int numeroOfertas;
